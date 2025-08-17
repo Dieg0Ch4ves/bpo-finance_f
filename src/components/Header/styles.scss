@@ -1,0 +1,33 @@
+@import "../../styles/_variables";
+
+.header {
+  background: $card-bg;
+  padding: 12px 16px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .brand {
+    font-weight: 600;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .navlink {
+    color: $muted;
+    text-decoration: none;
+    padding: 4px 8px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: 0.3s ease-in-out;
+  }
+
+  nav a:hover {
+    color: $accent;
+    border: 1px solid $accent;
+  }
+}

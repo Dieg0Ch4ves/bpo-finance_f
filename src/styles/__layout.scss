@@ -1,0 +1,113 @@
+.container {
+  max-width: 50%;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  th,
+  td {
+    padding: 8px 6px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+}
+
+.table-payables {
+  tr.row-pending {
+    background: #fffdf3;
+  }
+  tr.row-paid {
+    background: #f3fff6;
+  }
+  tr.row-overdue {
+    background: #fff5f5;
+  }
+
+  tr.row-pending td {
+    border-bottom-color: #f0e8c6;
+  }
+  tr.row-paid td {
+    border-bottom-color: #cfe7d7;
+  }
+  tr.row-overdue td {
+    border-bottom-color: #e8caca;
+  }
+}
+
+.table-receivables {
+  tr.row-pending {
+    background: #fffdf3;
+  }
+  tr.row-received {
+    background: #f3fff6;
+  }
+  tr.row-overdue {
+    background: #fff5f5;
+  }
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  line-height: 1.6;
+  text-transform: capitalize;
+  &.pending {
+    background: #fde68a;
+    color: #7a5d00;
+  }
+  &.paid {
+    background: #86efac;
+    color: #064e3b;
+  }
+  &.received {
+    background: #86efac;
+    color: #064e3b;
+  }
+  &.overdue {
+    background: #fca5a5;
+    color: #7f1d1d;
+  }
+}
+
+.btn,
+button {
+  background: $accent;
+  color: white;
+  padding: 8px 16px;
+  font-size: 1.16rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: $muted;
+}
+
+.cell-actions {
+  display: flex;
+  gap: 6px;
+
+  button {
+    font-size: 1rem;
+    padding: 6px 10px;
+  }
+
+  .delete {
+    background: #f87171;
+  }
+
+  .action {
+    background: #60a5fa;
+  }
+}
+
+.actions {
+  margin-bottom: 12px;
+}

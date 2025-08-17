@@ -1,0 +1,44 @@
+@import "./styles/_variables";
+@import "./styles/_layout";
+
+:root {
+  line-height: 1.5;
+  font-weight: 400;
+
+  background-color: $bg;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  margin: 0;
+  font-family:
+    Inter,
+    Roboto,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    sans-serif;
+  color: #111827;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul,
+ol {
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
